@@ -1,0 +1,713 @@
+body {
+  background: #003566;
+  margin: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* Page Main (1) */
+
+.container-page-main {
+  background-position: center;
+  background-size: cover;
+  background: black;
+  width: 340px;
+  height: 580px;
+  /*   border: 1px solid red; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  opacity: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cont-user {
+  width: 92%;
+  height: 60px;
+  /*   border: 1px solid green; */
+
+  padding: 14px 0px 14px 14px;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+}
+
+.cont-user-left {
+  width: 100%;
+  height: 100%;
+/*   border: 1px solid yellow; */
+
+  display: flex;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.cont-user-picture {
+  width: 50px;
+  height: 50px;
+/*     border: 1px solid yellow; */
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.img-user {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  display: block;
+}
+
+.cont-user-info {
+  width: 166px;
+  height: 100%;
+/*     border: 1px solid yellow; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cont-user-name {
+  width: 100%;
+  height: 100%;
+/*     border: 1px solid yellow; */
+
+  display: flex;
+  align-items: center;
+  margin-left:12px;
+}
+
+.cont-user-location{
+  width: 210px;
+  height: 100%;
+/*     border: 1px solid yellow; */
+
+  display: flex;
+  align-items: start;
+  margin-left:12px;
+}
+
+.cont-user-fullname{
+  width: 150px;
+  height: 100%;
+/*     border: 1px solid yellow; */
+
+  display: flex;
+  align-items: start;
+  margin-left:12px;
+}
+
+.cont-user-right {
+  width: 100%;
+  height: 100%;
+/*     border: 1px solid yellow; */
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.cont-user-options {
+  /*   border: 1px solid yellow; */
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cont-post {
+  width: 100%;
+  height: 62%;
+  /*   border: 1px solid green; */
+
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
+/*   background-image: url("https://images.pexels.com/photos/1175136/pexels-photo-1175136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+}
+
+.cont-data {
+  width: 100%;
+  height: 26%;
+  /*   border: 1px solid green; */
+
+  background-position: center;
+  background-size: cover;
+  text-indent: 16px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-icons {
+  width: 100%;
+  height: 20%;
+  /*   border: 1px solid yellow; */
+
+  padding-top: 8px;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont-icons-left {
+  width: 170px;
+  height: 100%;
+  /*     border: 1px solid yellow; */
+
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  background-position: center;
+}
+
+.btn-like {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+/*       border: 1px solid yellow; */
+}
+
+#filled-heart {
+  display: none;
+}
+
+.btn-like.clicked #empty-heart {
+  display: none;
+}
+
+.btn-like.clicked #filled-heart {
+  display: block;
+  color: red;
+}
+
+.btn-like-small {
+  width: 28px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+/*       border: 1px solid yellow; */
+}
+
+#filled-heart-small {
+  display: none;
+}
+
+.btn-like-small.clicked #empty-heart-small {
+  display: none;
+}
+
+.btn-like-small.clicked #filled-heart-small {
+  display: block;
+  color: red;
+}
+
+.btn-comment {
+  /*   border: 1px solid yellow; */
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#filled-comment {
+  display: none;
+}
+
+.btn-comment.clicked #empty-comment {
+  display: none;
+}
+
+.btn-comment.clicked #filled-comment {
+  display: block;
+}
+
+.btn-message {
+  /*   border: 1px solid yellow; */
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#filled-message {
+  display: none;
+}
+
+.btn-message.clicked #empty-message {
+  display: none;
+}
+
+.btn-message.clicked #filled-message {
+  display: block;
+}
+
+.cont-icons-right {
+  width: 170px;
+  height: 100%;
+  /*   border: 1px solid yellow; */
+
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  background-position: center;
+}
+
+.btn-bookmark {
+  /*   border: 1px solid yellow; */
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#filled-bookmark {
+  display: none;
+}
+
+.btn-bookmark.clicked #empty-bookmark {
+  display: none;
+}
+
+.btn-bookmark.clicked #filled-bookmark {
+  display: block;
+}
+
+.cont-likes {
+  width: 100%;
+  height: 20%;
+  /*   border: 1px solid yellow; */
+
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.cont-description {
+  width: 100%;
+  height: 20%;
+  /*   border: 1px solid yellow; */
+
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.others-button {
+  /*   border: 1px solid yellow; */
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+   background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.others-button:hover {
+text-decoration: underline;
+}
+
+.cont-comments {
+  width: 100%;
+  height: 20%;
+  /*   border: 1px solid yellow; */
+  text-indent: 10px;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: grey;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.cont-comments:hover {
+text-decoration: underline;
+}
+
+.cont-date {
+  width: 100%;
+  height: 20%;
+  /*   border: 1px solid yellow; */
+
+  background-position: center;
+  background-size: cover;
+
+  color: grey;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Likes and Comments */
+
+ul {
+/*     border: 1px solid blue; */
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+  padding-top: -20px;
+  margin-right:20px;
+  list-style-type: none;
+  
+}
+
+.cont-title {
+  width: 100%;
+  height: 80px;
+/*   border: 1px solid green; */
+
+  padding: 14px 14px 14px 14px;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+/*   flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  z-index:50;
+  border-bottom: 1px solid grey;
+  font-size: 12px;
+}
+
+.back-button-likes {
+  margin-right: 250px;
+  position: absolute;
+ transform: scale(1.8);
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.back-button-comments {
+  margin-right: 250px;
+  position: absolute;
+ transform: scale(1.8);
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.likes-comments-list {
+  width: 100%;
+  height: 100%;
+/*   border: 1px solid green; */
+
+  padding: 0px 14px 14px 14px;
+  background-position: center;
+  background-size: cover;
+
+  z-index:50;
+  overflow: auto;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.likes-comments-list::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* ====== Page User Likes (2) ====== */
+
+.container-page-user-likes {
+  background-position: center;
+  background-size: cover;
+  background: black;
+  width: 340px;
+  height: 580px;
+/*     border: 1px solid red; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-151%, -50%);
+  border-radius: 16px;
+  opacity: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  overflow: hidden;
+}
+
+.search-container{
+/*   border: 1px solid blue; */
+  width:300px;
+  height 35px;
+  margin-top:18px;
+  margin-bottom:18px;
+}
+
+.search-bar{
+  
+  background-color:grey;
+  color: white;
+  width:100%;
+  height:25px;
+  border: none;
+  border-radius:4px;
+  outline: none;
+  text-indent: 14px;
+  /*   border: 1px solid red; */
+}
+
+.search-bar::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+.like-item {
+  width: 300px;
+  height: 60px;
+/*   border: 1px solid green; */
+  
+  display: flex;
+}
+
+.follow-button {
+  width:78px;
+  height:26px;
+  border-radius: 10px;
+  border:none;
+  background-color:#2D95F6;
+  color:white;
+  cursor: pointer;
+}
+
+.following-button {
+  width:78px;
+  height:26px;
+  border-radius: 10px;
+  border:none;
+  background-color:grey;
+  color:white;
+  cursor: pointer;
+}
+
+/* ====== Comments ====== (3) */
+
+.container-page-comments {
+  background-position: center;
+  background-size: cover;
+  background: black;
+  width: 340px;
+  height: 580px;
+  /*   border: 1px solid red; */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(51%, -50%);
+  border-radius: 16px;
+  opacity: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  z-index: 0;
+  overflow: hidden;
+}
+
+.comment-item {
+  width: 300px;
+  height: 100%;
+/*   border: 1px solid green; */
+  
+  display: flex;
+  margin-bottom:20px;
+}
+
+.cont-user-name-c {
+  width: 200px;
+  height: 16px;
+/*     border: 1px solid yellow; */
+
+  display: flex;
+  align-items: start;
+  margin-left:8px;
+}
+
+.cont-user-comm-c {
+  width: 200px;
+  height: 26px;
+/*     border: 1px solid yellow; */
+
+  display: flex;
+  align-items: start;
+  font-size:11px;
+  margin-left:8px;
+}
+
+/* ====== Replies ====== (3) */
+
+.replies-container{
+  width: 240px;
+  height: 100%;
+  border: 1px solid orange;
+}
+
+/* .ul-replies {
+  background-position: center;
+  background-size: cover;
+  background: black;
+  width: 100%;
+  height: 20px;
+/*     border: 1px solid red; */
+} */
+
+.reply-item {
+  width: 300px;
+  height: 10px;;
+/*   border: 1px solid green; */
+  
+  display: flex;
+  margin-bottom:20px;
+}
+
+.reply-button-c {
+  width: 50px;
+  height: 15px;
+
+  display: flex;
+  align-items: center;
+  font-size:11px;
+  margin-left:8px;
+  background-color: transparent;
+  color: grey;
+  border: none;
+  outline: none;
+  cursor: pointer;
+    margin-top:4px;
+
+/*       border: 1px solid yellow; */
+}
+
+.view-replies-c {
+ width: 200px;
+  height: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size:11px;
+  margin-left:8px;
+  background-color: transparent;
+  color: grey;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top:6px;
+/*       border: 1px solid yellow; */
+}
+
+.view-replies-c::before {
+  content: "";
+  display: inline-block;
+  width: 15%;
+  border-bottom: 1px solid grey;
+  margin-top:3px;
+  margin-right: 10px;
+}
+
+/* Other */
+
+.hidden {
+  display: none;
+}
+
+.new{
+   width: 400px;
+  height: 500px;
+        border: 1px solid yellow;
+}
